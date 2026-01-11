@@ -5,10 +5,15 @@ import { Exo } from 'next/font/google'
 import React from 'react'
 import mongoose  from 'mongoose'
 import { IEvent } from '@/database'
+import { cacheLife } from 'next/dist/server/use-cache/cache-life'
+
 
 const BASE_URL = process.env.NEXT_BASE_PUBLIC_URL
 
 const page = async () => {
+  'use cache'
+  cacheLife('hours')
+  
   const response = await fetch(`${BASE_URL}/api/events`);
   const {events } = await response.json();
 
