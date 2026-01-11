@@ -3,11 +3,18 @@ import ExplorerBtn from '@/components/ExplorerBtn'
 import events from '@/lib/constants'
 import { Exo } from 'next/font/google'
 import React from 'react'
+import mongoose  from 'mongoose'
+import { IEvent } from '@/database'
 
+const BASE_URL = process.env.NEXT_BASE_PUBLIC_URL
 
-const page = () => {
+const page = async () => {
+  const response = await fetch(`${BASE_URL}/api/events`);
+  const {events } = await response.json();
+
   return (
     <>
+
   <section>
     <h1 className='text-center'>The Hub for every Dev Event <br /> You can't miss</h1>
     <p className='text-center mt-5'>Hackthons, conferences, meetups and more.</p>
@@ -15,11 +22,11 @@ const page = () => {
   <ExplorerBtn/>
 
   <div className='mt-20 space-y-7'>
-    <p>Feature Event</p>
+    <h3>Featured Events</h3>
 
-    <ul className='events'>
+    <ul className='events list-none'>
       {
-      events.map((event) => (
+      events && events.length > 0 && events.map((event : IEvent) => (
         <li key={event.title} >
           <EventCard {...event}/>
         </li>
@@ -27,6 +34,7 @@ const page = () => {
       }
     </ul>
   </div>
+      
     </>
   )
 }
