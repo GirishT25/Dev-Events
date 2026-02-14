@@ -42,11 +42,6 @@ Built using **Next.js** for optimized performance and SEO, with **PostHog analyt
 
 ![Homepage Screenshot](./public/homepage.png)
 
-
-> 📌 Add your homepage image inside a folder named `screenshots` in your project root.
-
----
-
 ## 📂 Project Structure
 
 event-management-platform/
