@@ -40,7 +40,7 @@ Built using **Next.js** for optimized performance and SEO, with **PostHog analyt
 ---
 ## 🏠 Homepage Preview
 
-![Homepage Screenshot](./public/homepage.png)
+![Homepage Screenshot](./public/Screenshot2026-02-14110621.png)
 
 ## 📂 Project Structure
 
