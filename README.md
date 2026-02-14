@@ -38,10 +38,10 @@ Built using **Next.js** for optimized performance and SEO, with **PostHog analyt
 - 🔎 SEO-friendly architecture  
 
 ---
-
 ## 🏠 Homepage Preview
 
-![Homepage Screenshot](./screenshots/homepage.png)
+![Homepage Screenshot](./public/homepage.png)
+
 
 > 📌 Add your homepage image inside a folder named `screenshots` in your project root.
 
