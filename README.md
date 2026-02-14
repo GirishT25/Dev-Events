@@ -1,40 +1,116 @@
-<<<<<<< HEAD
-# Dev-Events
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 Event Management & Hosting Platform
 
-## Getting Started
+A modern web application built with **Next.js** that allows users to create, manage, and explore events seamlessly. The platform focuses on performance, scalability, and user engagement tracking through integrated analytics.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Project Overview
+
+This application enables users to:
+
+- 📅 Create and host events  
+- 📝 Manage event details  
+- 🔍 Explore available events  
+- 📊 Track user engagement and behavior  
+
+Built using **Next.js** for optimized performance and SEO, with **PostHog analytics** integration for data-driven insights.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend & Framework
+- Next.js  
+- React.js  
+- Tailwind CSS  
+
+### Analytics
+- PostHog (User behavior tracking & analytics)
+
+---
+
+## ✨ Key Features
+
+- ⚡ Server-Side Rendering (SSR) & optimized performance  
+- 🎨 Responsive UI with Tailwind CSS  
+- 📊 Integrated PostHog analytics  
+- 🧩 Scalable and modular project structure  
+- 🔎 SEO-friendly architecture  
+
+---
+
+## 🏠 Homepage Preview
+
+![Homepage Screenshot](./screenshots/homepage.png)
+
+> 📌 Add your homepage image inside a folder named `screenshots` in your project root.
+
+---
+
+## 📂 Project Structure
+
+event-management-platform/
+│
+├── components/
+├── pages/
+├── public/
+├── styles/
+├── screenshots/
+│ └── homepage.png
+└── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+
+git clone https://github.com/your-username/event-management-platform.git
+cd event-management-platform
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Application will run at:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+📊 PostHog Analytics Setup
 
-To learn more about Next.js, take a look at the following resources:
+Create an account at PostHog.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Copy your API key.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Create a .env.local file in the root directory and add:
 
-## Deploy on Vercel
+NEXT_PUBLIC_POSTHOG_KEY=your_posthog_key
+NEXT_PUBLIC_POSTHOG_HOST=https://app.posthog.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 676f58d (Initial commit from Create Next App)
+Restart the development server.
+
+🚀 Future Enhancements
+
+🔐 Authentication system
+
+💳 Event ticket booking & payments
+
+📍 Location-based event filtering
+
+📈 Admin dashboard with advanced analytics
+
+☁️ CI/CD pipeline & production deployment
+
+👨‍💻 Author
+
+Girish Thorat
+Full Stack Developer | Building Scalable Web Applications
+
+
+Just tell me 🚀
